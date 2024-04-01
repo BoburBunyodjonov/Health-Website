@@ -9,6 +9,10 @@ import Logo from "@/images/logo.png"
 import { IoSearch } from "react-icons/io5";
 import { FaBars } from "react-icons/fa6";
 
+//Components 
+import Search from "../search/Search";
+
+
 
 
 
@@ -43,7 +47,7 @@ const Header = () => {
           </ul>
         </div>
       </div>
-      <nav class="bg-white">
+      <nav class="bg-white ">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
           <Link
             href="/"
@@ -51,6 +55,7 @@ const Header = () => {
           >
             <Image src={Logo} width={70}/>
           </Link>
+          <Search/>
           <div class="flex md:order-2">
             <button
               type="button"
@@ -88,7 +93,7 @@ const Header = () => {
               <FaBars class="w-5 h-5" />
             </button>
           </div>
-          <div
+          {/* <div
             class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
             id="navbar-search"
           >
@@ -144,7 +149,7 @@ const Header = () => {
                 </a>
               </li>
             </ul>
-          </div>
+          </div> */}
         </div>
       </nav>
     </header>
