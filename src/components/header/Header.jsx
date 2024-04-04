@@ -124,25 +124,25 @@ const Header = () => {
                   <div className="flex items-center justify-center py-2">
                     <ul className="space-x-4">
                       <li className="inline-block">
-                        <Link href="/catalogue" className="flex items-center text-sm text-[#202020] font-semibold" href=""><HiMenuAlt1 /> Каталог</Link>
+                        <Link href="/catalogue" className="hover:text-[#088269] duration-200 flex items-center text-sm text-[#202020] font-semibold"><HiMenuAlt1 /> Каталог</Link>
                       </li>
                       <li className="inline-block">
-                        <Link className="text-sm text-[#202020] font-semibold" href="">Производители</Link>
+                        <Link className="hover:text-[#088269] duration-200 text-sm text-[#202020] font-semibold" href="">Производители</Link>
                       </li>
                       <li className="inline-block">
-                        <Link className="text-sm text-[#202020] font-semibold" href="">Кабинеты под ключ</Link>
+                        <Link className="hover:text-[#088269] duration-200 text-sm text-[#202020] font-semibold" href="">Кабинеты под ключ</Link>
                       </li>
                       <li className="inline-block">
-                        <Link className="text-sm text-[#202020] font-semibold" href="">Услуги</Link>
+                        <Link className="hover:text-[#088269] duration-200 text-sm text-[#202020] font-semibold" href="">Услуги</Link>
                       </li>
                       <li className="inline-block">
-                        <Link className="text-sm text-[#202020] font-semibold" href="">Акции</Link>
+                        <Link className="hover:text-[#088269] duration-200 text-sm text-[#202020] font-semibold" href="">Акции</Link>
                       </li>
                       <li className="inline-block">
-                        <Link className="text-sm text-[#202020] font-semibold" href="">Покупателям</Link>
+                        <Link className="hover:text-[#088269] duration-200 text-sm text-[#202020] font-semibold" href="">Покупателям</Link>
                       </li>
                       <li className="inline-block">
-                        <Link className="text-sm text-[#202020] font-semibold" href="">Контакты</Link>
+                        <Link className="hover:text-[#088269] duration-200 text-sm text-[#202020] font-semibold" href="">Контакты</Link>
                       </li>
                     </ul>
                   </div>

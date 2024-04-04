@@ -1,4 +1,5 @@
 import Apply from '@/components/apply/Apply'
+import Categories from '@/components/categories/Categories'
 import HeaderBanner from '@/components/header/HeaderBanner'
 import Information from '@/components/information/Information'
 import Map from '@/components/map/Map'
@@ -11,6 +12,7 @@ const Home = () => {
   return (
     <>
       <HeaderBanner/>
+      <Categories/>
       <OurClients/>
       <BrandSlider/>
       <Information/>
