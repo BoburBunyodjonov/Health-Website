@@ -15,12 +15,35 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={manrope.className}>
+      <head>
+          <link
+            rel="stylesheet"
+            type="text/css"
+            // charset="UTF-8"
+            href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css"
+          />
+          <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
+          />
+      </head>
+
+      <body className={`${manrope.className} bg-[#F8F7F3]`}>
+
         
         <Header/>
       
         {children}
         <Footer/>
+       {/* from node_modules  */}
+        <script src="node_modules/@material-tailwind/html/scripts/collapse.js"></script>
+    
+          {/* from cdn */}
+        <script src="https://unpkg.com/@material-tailwind/html@latest/scripts/collapse.js"></script>
+
+
+
         <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
 
         </body>

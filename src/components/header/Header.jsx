@@ -6,20 +6,23 @@ import Image from "next/image";
 import Logo from "@/images/logo.png"
 
 // Icons
-import { IoSearch } from "react-icons/io5";
 import { FaBars } from "react-icons/fa6";
+import { FaRegUser } from "react-icons/fa6";
+import { MdFavoriteBorder } from "react-icons/md";
+import { BiBarChartAlt } from "react-icons/bi";
+import { MdOutlineShoppingCart } from "react-icons/md";
+import { HiMenuAlt1 } from "react-icons/hi";
+import { CiLocationOn } from "react-icons/ci";
+
 
 //Components 
 import Search from "../search/Search";
-
-
-
-
+import { ButtonPrimary, ButtonTertiary } from "../buttons/Buttons";
 
 
 const Header = () => {
   return (
-    <header className="w-full">
+    <header className="w-full ">
       <div className="w-full border-b border-[#E5E2EE]">
         <div className="container mx-auto text-[#7A7687] text-xs grid md:grid-cols-2 items-center justify-center">
           <ul className="">
@@ -47,7 +50,7 @@ const Header = () => {
           </ul>
         </div>
       </div>
-      <nav class="bg-white ">
+      <nav class="">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
           <Link
             href="/"
@@ -56,32 +59,9 @@ const Header = () => {
             <Image src={Logo} width={70}/>
           </Link>
           <Search/>
+          <p className="text-xs text-[#7A7687]">Пн-Пт с 09:00-19:00 <br />
+              Сб-Вс - выходной</p>
           <div class="flex md:order-2">
-            <button
-              type="button"
-              data-collapse-toggle="navbar-search"
-              aria-controls="navbar-search"
-              aria-expanded="false"
-              class="md:hidden text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 me-1"
-            >
-             <IoSearch className="w-5 h-5" />
-
-
-              <span class="sr-only">Search</span>
-            </button>
-            <div class="relative hidden md:block">
-              <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
-              <IoSearch className="w-4 h-4 text-gray-500 dark:text-gray-400" />
-                
-                <span class="sr-only">Search icon</span>
-              </div>
-              <input
-                type="text"
-                id="search-navbar"
-                class="block w-full p-2 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                placeholder="Search..."
-              />
-            </div>
             <button
               data-collapse-toggle="navbar-search"
               type="button"
@@ -93,63 +73,94 @@ const Header = () => {
               <FaBars class="w-5 h-5" />
             </button>
           </div>
-          {/* <div
+          <div
             class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
             id="navbar-search"
           >
-            <div class="relative mt-3 md:hidden">
-              <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
-                <svg
-                  class="w-4 h-4 text-gray-500 dark:text-gray-400"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 20 20"
-                >
-                  <path
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
-                  />
-                </svg>
-              </div>
-              <input
-                type="text"
-                id="search-navbar"
-                class="block w-full p-2 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500  dark:border-gray-600 dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                placeholder="Search..."
-              />
-            </div>
-            <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white   dark:border-gray-700">
-              <li>
+            <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border≈ border-gray-100 rounded-lg bg-[#F8F7F3] md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0">
+            <li className="">
+              <a
+                href="#"
+                className=""
+              >
+                <FaRegUser className="text-xl mx-3" />
+                <span className="text-xs text-[#7A7687]">Войти</span>
+              </a>
+            </li>
+
+              <li className="">
                 <a
                   href="#"
-                  class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500"
-                  aria-current="page"
+                  class=""
                 >
-                  Home
+                  <MdFavoriteBorder  className="text-xl mx-3"/>
+
+                  <span className="text-xs text-[#7A7687]">Избранное</span>
                 </a>
               </li>
               <li>
                 <a
                   href="#"
-                  class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                  class=""
                 >
-                  About
+                  <BiBarChartAlt className="text-xl mx-3" />
+                  <span className="text-xs text-[#7A7687]">Сравнить</span>
                 </a>
               </li>
               <li>
                 <a
                   href="#"
-                  class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                  class=""
                 >
-                  Services
+                  <MdOutlineShoppingCart className="text-xl mx-3" />
+                  <span className="text-xs text-[#7A7687]">Корзина</span>
                 </a>
               </li>
             </ul>
-          </div> */}
+          </div>
+        </div>
+        <div className="border">
+              <div className="container mx-auto px-3 lg:flex justify-between">
+                  <div className="flex items-center justify-center py-2">
+                    <ul className="space-x-4">
+                      <li className="inline-block">
+                        <Link className="flex items-center text-sm text-[#202020] font-semibold" href=""><HiMenuAlt1 /> Каталог</Link>
+                      </li>
+                      <li className="inline-block">
+                        <Link className="text-sm text-[#202020] font-semibold" href="">Производители</Link>
+                      </li>
+                      <li className="inline-block">
+                        <Link className="text-sm text-[#202020] font-semibold" href="">Кабинеты под ключ</Link>
+                      </li>
+                      <li className="inline-block">
+                        <Link className="text-sm text-[#202020] font-semibold" href="">Услуги</Link>
+                      </li>
+                      <li className="inline-block">
+                        <Link className="text-sm text-[#202020] font-semibold" href="">Акции</Link>
+                      </li>
+                      <li className="inline-block">
+                        <Link className="text-sm text-[#202020] font-semibold" href="">Покупателям</Link>
+                      </li>
+                      <li className="inline-block">
+                        <Link className="text-sm text-[#202020] font-semibold" href="">Контакты</Link>
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="flex items-center justify-center py-2">
+                    <ul className="flex space-x-3">
+                        <li className="flex items-center">
+                            <span className="text-sm text-[#202020] font-semibold">Москва</span>
+                            <CiLocationOn />
+                        </li>
+                        <li>
+                          <ButtonTertiary title="+7(495)000-00-00"/>
+                        </li>
+                        <li>
+                          <ButtonPrimary title="Заказать звонок" />
+                        </li>
+                    </ul>
+                  </div>
+              </div>
         </div>
       </nav>
     </header>
