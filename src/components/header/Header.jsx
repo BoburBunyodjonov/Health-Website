@@ -124,7 +124,7 @@ const Header = () => {
                   <div className="flex items-center justify-center py-2">
                     <ul className="space-x-4">
                       <li className="inline-block">
-                        <Link className="flex items-center text-sm text-[#202020] font-semibold" href=""><HiMenuAlt1 /> Каталог</Link>
+                        <Link href="/catalogue" className="flex items-center text-sm text-[#202020] font-semibold" href=""><HiMenuAlt1 /> Каталог</Link>
                       </li>
                       <li className="inline-block">
                         <Link className="text-sm text-[#202020] font-semibold" href="">Производители</Link>
