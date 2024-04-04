@@ -1,13 +1,21 @@
 "use client";
 
 import React, { useRef, useState } from "react";
+import Image from "next/image";
+
+// Carusel Slick
 import Slider from "react-slick";
 
+// Icons
 import { GrFormPreviousLink } from "react-icons/gr";
 import { GrFormNextLink } from "react-icons/gr";
 
-import brandImg1 from "@/images/brand1.png";
-import Image from "next/image";
+// Images
+import brandImg1 from "@/images/brand/brand1.png";
+import brandImg2 from "@/images/brand/brand2.png";
+import brandImg3 from "@/images/brand/brand3.png";
+
+// Button Components
 import { ButtonPrimary } from "../buttons/Buttons";
 
 function Resizable() {
@@ -25,10 +33,11 @@ function Resizable() {
     slidesToShow: 3,
     slidesToScroll: 1,
   };
+
   return (
     <>
       <div className="container mx-auto py-10">
-        <div className="float-left p-5 ">
+        <div className="lg:float-left p-5 ">
             <h1 className="text-3xl text-[#202020] font-medium">Бренды</h1><br />
             <p className="font-base text-[#202020] font-medium">Эксклюзивные поставщики</p>
         </div>
@@ -41,8 +50,8 @@ function Resizable() {
           >
             <div className="p-2">
               <div className="border border-[#E5E2EE]">
-                <div className="bg-white border-b border-[#E5E2EE] p-5 flex justify-center items-center">
-                  <Image className="object-contain" src={brandImg1} />
+                <div className="bg-white border-b h-[200px] border-[#E5E2EE] p-5 flex justify-center items-center">
+                  <Image className="object-contain h-full" src={brandImg1} height={200} />
                 </div>
                 <div className="p-4">
                   <p className="text-base font-medium text-[#202020]">НМИЦ онкологии им. Н.Н. Блохина</p>
@@ -51,8 +60,8 @@ function Resizable() {
             </div>
             <div className="p-2">
               <div className="border border-[#E5E2EE]">
-                <div className="bg-white border-b border-[#E5E2EE] p-5 flex justify-center items-center">
-                  <Image className="object-contain" src={brandImg1} />
+                <div className="bg-white border-b h-[200px] border-[#E5E2EE] p-5 flex justify-center items-center">
+                  <Image className="object-contain h-full" src={brandImg2}  />
                 </div>
                 <div className="p-4">
                   <p className="text-base font-medium text-[#202020]">НМИЦ онкологии им. Н.Н. Блохина</p>
@@ -61,18 +70,8 @@ function Resizable() {
             </div>
             <div className="p-2">
               <div className="border border-[#E5E2EE]">
-                <div className="bg-white border-b border-[#E5E2EE] p-5 flex justify-center items-center">
-                  <Image className="object-contain" src={brandImg1} />
-                </div>
-                <div className="p-4">
-                  <p className="text-base font-medium text-[#202020]">НМИЦ онкологии им. Н.Н. Блохина</p>
-                </div>
-              </div>
-            </div>
-            <div className="p-2">
-              <div className="border border-[#E5E2EE]">
-                <div className="bg-white border-b border-[#E5E2EE] p-5 flex justify-center items-center">
-                  <Image className="object-contain" src={brandImg1} />
+                <div className="bg-white border-b h-[200px] border-[#E5E2EE] p-5 flex justify-center items-center">
+                  <Image className="object-contain h-full" src={brandImg3} />
                 </div>
                 <div className="p-4">
                   <p className="text-base font-medium text-[#202020]">НМИЦ онкологии им. Н.Н. Блохина</p>

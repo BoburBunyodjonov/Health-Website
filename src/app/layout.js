@@ -36,12 +36,7 @@ export default function RootLayout({ children }) {
       
         {children}
         <Footer/>
-       {/* from node_modules  */}
-        <script src="node_modules/@material-tailwind/html/scripts/collapse.js"></script>
-    
-          {/* from cdn */}
-        <script src="https://unpkg.com/@material-tailwind/html@latest/scripts/collapse.js"></script>
-
+     
 
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
