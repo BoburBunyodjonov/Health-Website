@@ -83,7 +83,7 @@ const Footer = () => {
             <div className="w-full lg:w-[60%]  lg:order-2 p-5 space-y-3">
               <h1 className="font-semibold text-sm text-[#F8F7F3]">Каталогa</h1>
               <hr />
-              <ul className="grid grid-cols-3 gap-x-4 space-y-1">
+              <ul className="grid md:grid-cols-2 lg:grid-cols-3  gap-x-4 space-y-1">
                 {
                   catalogue.map((link) => {
                     return (

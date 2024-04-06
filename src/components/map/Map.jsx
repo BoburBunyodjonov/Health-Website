@@ -10,7 +10,7 @@ import { ButtonPrimary } from "../buttons/Buttons";
 const Map = () => {
   return (
     <section class="w-full text-gray-600 body-font relative">
-      <div class="container px-5 py-24 mx-auto grid gap-3 md:grid-cols-2">
+      <div class="container px-5 py-10 mx-auto grid gap-3 md:grid-cols-2">
         <div class=" bg-gray-300 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
           <iframe
             width="100%"

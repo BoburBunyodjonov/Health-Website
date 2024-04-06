@@ -1,0 +1,10 @@
+
+.content > div > div:nth-child(1){
+    height: 75%;
+}
+.content > div:nth-child(2) {
+    grid-area: 1 / 2 / 3 / 3;
+}
+.content > div:nth-child(2) > div:nth-child(1) {
+    height: 90%;
+}

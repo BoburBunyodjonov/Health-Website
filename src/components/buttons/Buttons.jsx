@@ -23,4 +23,13 @@ const ButtonPrimary = ({ title }) => {
     );
 };
 
-export { ButtonTertiary, ButtonPrimary, ButtonSecondary };
+const ButtonQuaternary = ({ title, width, onChandleAddToCartlick }) => {
+  return (
+    <button onClick={onChandleAddToCartlick} className={`${width} border border-[#D5D1E1] duration-200 bg-inherit text-sm text-[#088269] font-semibold hover:bg-[#07745E] hover:text-[#F8F7F3] focus:border-[#088269]  focus:border-2 focus:bg-[#066753] focus:text-[#F8F7F3] rounded-[50px] px-[20px] py-[11px]`}>
+      {title}
+    </button>
+  );
+};
+
+
+export { ButtonTertiary, ButtonPrimary, ButtonSecondary, ButtonQuaternary };
