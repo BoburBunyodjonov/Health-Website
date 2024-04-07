@@ -21,9 +21,9 @@ const Categories = () => {
         <ButtonPrimary dataAos="flip-up"  title="Все категории" />
       </div>
       <div className="container content grid sm:grid-cols-1 md:grid-cols-2 px-3 lg:grid-cols-4 gap-3 mx-auto">
-        {categories.map((category) => {
+        {categories.map((category, index) => {
           return (
-            <div className="border rounded-lg border-[#E5E2EE]">
+            <div key={index} className="border rounded-lg border-[#E5E2EE]">
               <div className="bg-white rounded-[8px_8px_0px_0px] border-b border-[#E5E2EE] p-5 flex justify-center items-center">
                 <Image className="object-contain w-full h-full" src={category.img} />
               </div>
