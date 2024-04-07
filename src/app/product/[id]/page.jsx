@@ -1,61 +1,58 @@
-"use client"
+import { ButtonPrimary, ButtonSecondary } from "@/components/buttons/Buttons";
+import Image from "next/image";
+import { notFound } from "next/navigation";
 
-import { useState, useEffect } from 'react';
-import { notFound, useRouter } from 'next/navigation';
-import Data from '@/data/data';
-
-const ProductDetailedPage = () => {
-    const router = useRouter();
-    const  id  = router.query;
-    const [product, setProduct] = useState(null);
-    const [loading, setLoading] = useState(true);
-    const [da, setDa] = useState(Data);
-
-    useEffect(() => {
-        const fetchData = async () => {
-            try {
-                const res = await fetch(`${da}/${id}`);
-                if (!res.ok) {
-                    throw new Error('Failed to fetch product data');
-                }
-                const productData = await res.json();
-                setProduct(productData);
-                setLoading(false);
-            } catch (error) {
-                console.error(error);
-                notFound(); // Handle 404 error
-            }
-        };
-
-        if (id) {
-            fetchData();
-        }
-
-        return () => setLoading(true); // Cleanup loading state on unmount
-    }, [id]);
+const ProductDetailedPage = async ({ params: { id } }) => {
+  try {
+    const res = await fetch(`http://localhost:4000/products/${id}`);
+    const product = await res.json();
 
     return (
-        <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-8 px-4 mt-48 pb-10">
-            {loading ? (
-                <p>Loading...</p>
-            ) : product ? (
-                <>
-                    {/* Add your CustomImage component here */}
-                    <div className="divide-2">
-                        <div className="space-y-2 pb-8">
-                            <h1 className="text-2xl md:text-4xl font-bold">{product.title}</h1>
-                            <h2 className="text-gray-500 font-bold text-xl md:text-3xl">${product.price}</h2>
-                        </div>
-                        <div>
-                            <p className="text-xs md:text-sm">{product.description}</p>
-                        </div>
-                    </div>
-                </>
-            ) : (
-                <p>Product not found</p>
-            )}
+      <>
+        <div className="container  mx-auto flex flex-col md:flex-row items-center gap-8 px-4 py-10">
+          <div className="grid md:grid-cols-2 gap-5 ">
+            <div className="p-3 bg-white flex justify-center items-center relative h-full">
+              <Image src={product.image} width={300} height={300} />
+            </div>
+            <div className="p-3 flex-1 flex flex-col space-y-3">
+              <div className="flex-1">
+                <h1 className=" text-xl font-semibold">{product.title}</h1>{" "}
+                <br />
+                <p className="text-[#7A7687] text-sm">
+                  <span>Категория:</span>
+                  <span>{product.category}</span>
+                </p>
+                <h2 className="font-medium text-[#202020] text-lg">
+                  {product?.price}
+                </h2>
+				<div className="p-3 space-x-4">
+				<ButtonSecondary title="Задать вопрос" />
+				<ButtonPrimary title="Добавить в корзину" />
+				</div>
+                <hr />
+                <p className="font-medium text-base">
+                  
+                </p>
+                <br />
+                <p className="line-clamp-5 text-sm">{product.description}</p>
+              </div>
+
+              {/* <div className='space-y-3 text-sm'>
+										<ButtonSecondary title="Больше информации о товаре" onClick={() => window.location.reload()} />
+										<button
+											
+											className='button w-full bg-transparent border-blue-600 hover:bg-blue-600 hover:text-white hover:border-transparent'
+										>
+										</button>
+									</div> */}
+            </div>
+          </div>
         </div>
+      </>
     );
+  } catch (error) {
+    notFound();
+  }
 };
 
 export default ProductDetailedPage;

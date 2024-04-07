@@ -15,15 +15,15 @@ const Choose = () => {
                   <Image className="object-contain" src={Choose1}  alt="" />
                   <p className="text-base text-[#202020]">Быстрая  доставка</p>
             </div>
-            <div className="py-10 flex flex-col justify-center items-center space-y-5 border border-[#E5E2EE] rounded-xl">
+            <div  className="py-10 flex flex-col justify-center items-center space-y-5 border border-[#E5E2EE] rounded-xl">
                   <Image className="object-contain" src={Choose2}  alt="" />
                   <p className="text-base text-[#202020]">Быстрая  доставка</p>
             </div>
-            <div className="py-10 flex flex-col justify-center items-center space-y-5 border border-[#E5E2EE] rounded-xl">
+            <div  className="py-10 flex flex-col justify-center items-center space-y-5 border border-[#E5E2EE] rounded-xl">
                   <Image className="object-contain" src={Choose3}  alt="" />
                   <p className="text-base text-[#202020]">Быстрая  доставка</p>
             </div>
-            <div className="py-10 flex flex-col justify-center items-center space-y-5 border border-[#E5E2EE] rounded-xl">
+            <div   className="py-10 flex flex-col justify-center items-center space-y-5 border border-[#E5E2EE] rounded-xl">
                   <Image className="object-contain" src={Choose4}  alt="" />
                   <p className="text-base text-[#202020]">Быстрая  доставка</p>
             </div>

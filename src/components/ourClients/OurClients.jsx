@@ -27,10 +27,10 @@ const OurClients = () => {
             <h1 className="text-[#202020] text-3xl font-medium">Наши клиенты</h1>
             <h1 className="text-[#202020] font-medium text-4xl">БОЛЕЕ <span className="text-[#088269]">5000</span> <br /> УСПЕШНЫХ ПРОЕКТОВ</h1>
         </div>
-      <Marquee className="w-full" speed={70} gradient={false} pauseOnHover={true}>
+      <Marquee  className="w-full" speed={70} gradient={false} pauseOnHover={true}>
         {card.map((item) => {
           return (
-            <Card className="border rounded-lg ml-4 border-[#E5E2EE]">
+            <Card  className="border rounded-lg ml-4 border-[#E5E2EE]">
               <CardActionArea>
                 <div className="w-full flex justify-center items-center bg-white border-b border-[#E5E2EE]">
                   <Image

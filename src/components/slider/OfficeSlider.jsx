@@ -74,7 +74,7 @@ const OfficeSlider = () => {
             }}
             {...settings}
           >
-            <div className="p-2">
+            <div className="p-2"  >
               <div className=" rounded-xl ">
                 <div className=" w-full flex justify-center items-center">
                   <Image className="w-full object-contain" src={Office1} />
@@ -84,7 +84,7 @@ const OfficeSlider = () => {
                 </div>
               </div>
             </div>
-            <div className="p-2">
+            <div className="p-2" >
               <div className=" rounded-xl">
                 <div className="w-full flex justify-center items-center">
                   <Image className="w-full object-contain" src={Office2}  alt="img2" />

@@ -44,8 +44,9 @@ const ProductCard = ({ index, items }) => {
   return (
     <>
       <div className="card p-1">
-        <Link href={`/product/${items.id}`}>
           <div className="border w-full rounded-lg border-[#E5E2EE]">
+            <Link href={`/product/${items.id}`}>
+
             <div className="card_img h-[60%] rounded-tr-lg rounded-tl-lg p-3 flex flex-col justify-center items-center border-b bg-white border-[#E5E2EE]">
               <div className="w-full py-3 flex justify-between items-center">
                 <New />
@@ -75,6 +76,7 @@ const ProductCard = ({ index, items }) => {
                   : "Нет в наличии на складе"}
               </p>
             </div>
+            </Link>
             <div className="cart_footer p-3 space-y-2">
               <p className="text-xl font-semibold text-[#202020]">
                 {items.price}
@@ -94,7 +96,7 @@ const ProductCard = ({ index, items }) => {
               )}
             </div>
           </div>
-        </Link>
+        
       </div>
     </>
   );

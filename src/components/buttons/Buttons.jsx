@@ -6,9 +6,9 @@ const ButtonTertiary = ({ title }) => {
   );
 };
 
-const ButtonSecondary = ({ title }) => {
+const ButtonSecondary = ({ title, onClick }) => {
   return (
-    <button className="text-sm font-semibold text-[#088269] border border-[#D5D1E1] hover:border-[#07745E] focus:text-[#066753] focus:border-[#066753] focus:bg-[#E1EFE6] rounded-[50px] px-[20px] py-[11px]">
+    <button onClick={onClick} className="text-sm font-semibold text-[#088269] border border-[#D5D1E1] hover:border-[#07745E] focus:text-[#066753] focus:border-[#066753] focus:bg-[#E1EFE6] rounded-[50px] px-[20px] py-[11px]">
       {title}
     </button>
   );

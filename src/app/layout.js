@@ -27,6 +27,8 @@ export default function RootLayout({ children }) {
             type="text/css"
             href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
           />
+          <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
       </head>
 
       <body className={`${manrope.className} bg-[#F8F7F3]`}>
@@ -39,8 +41,12 @@ export default function RootLayout({ children }) {
      
 
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+           <script>
+            AOS.init();
+          </script>
         </body>
         
     </html>

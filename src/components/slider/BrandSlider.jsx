@@ -64,7 +64,7 @@ function BrandSlider() {
 
   return (
     <>
-      <div className="container mx-auto px-3 py-10">
+      <div  className="container mx-auto px-3 py-10">
         <div className="lg:float-left p-5 ">
             <h1 className="text-3xl text-[#202020] font-medium">Бренды</h1><br />
             <p className="font-base text-[#202020] font-medium">Эксклюзивные поставщики</p>

@@ -1,8 +1,10 @@
 'use client';
 
+import Image  from 'next/image';
 import { Dialog } from '@headlessui/react';
 import { useParams, useRouter } from 'next/navigation';
 import { useEffect, useState } from 'react';
+import { ButtonSecondary } from '@/components/buttons/Buttons';
 
 const ProductDetailedPage = () => {
 	const [loading, setLoading] = useState(false);
@@ -16,7 +18,7 @@ const ProductDetailedPage = () => {
 		async function getData() {
 			setLoading(true);
 			const res = await fetch(
-				`https://fakestoreapi.com/products/${id}`
+				`http://localhost:4000/products/${id}`
 			);
 			const product = await res.json();
 			setProduct(product);
@@ -45,36 +47,39 @@ const ProductDetailedPage = () => {
 						{loading ? (
 							<div className='h-8 w-8 rounded-full border-2 border-dotted border-blue-600 animate-spin' />
 						) : (
-							<div className='flex gap-x-8 h-96'>
+							<div className='grid md:grid-cols-2 gap-x-8 h-96'>
 								{product?.image && (
 									<div className='relative w-72 h-full hidden md:inline'>
 										{/* <CustomImage product={product} fill /> */}
+										<Image src={product.image} width={300} height={300} />
 									</div>
 								)}
-								<div className='flex-1 flex flex-col'>
+								<div className='flex-1 flex flex-col space-y-3'>
 									<div className='flex-1'>
-										<h4 className='font-semibold'>
+										<h1 className=' text-xl font-semibold'>
 											{product?.title}
-										</h4>
-										<p className='font-medium text-sm'>
-											${product?.price}
+										</h1> <br />
+										<p className='text-[#7A7687] text-sm'>
+											<span>Категория:</span>
+											<span>{product?.category}</span>
 										</p>
-
-										
+										<h2 className='font-medium text-[#202020] text-lg'>Цена по запросу</h2>
+										<br />
+										<hr />
+										<p className='font-medium text-base'>
+											{/* ${product?.price} */}
+										</p><br />
 										<p className='line-clamp-5 text-sm'>
 											{product?.description}
 										</p>
 									</div>
 
 									<div className='space-y-3 text-sm'>
-										<button className='button w-full bg-blue-600 text-white border-transparent hover:border-blue-600 hover:bg-transparent hover:text-black'>
-											Add to bag
-										</button>
+										<ButtonSecondary title="Больше информации о товаре" onClick={() => window.location.reload()} />
 										<button
-											onClick={() => window.location.reload()}
+											
 											className='button w-full bg-transparent border-blue-600 hover:bg-blue-600 hover:text-white hover:border-transparent'
 										>
-											View full details
 										</button>
 									</div>
 								</div>

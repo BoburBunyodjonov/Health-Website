@@ -18,7 +18,7 @@ const Categories = () => {
     <>
       <div className="container py-10 space-y-3 mx-auto grid md:flex px-3 justify-center md:justify-between items-center">
         <h1 className="text-3xl font-medium">Популярные категории</h1>
-        <ButtonPrimary title="Все категории" />
+        <ButtonPrimary dataAos="flip-up"  title="Все категории" />
       </div>
       <div className="container content grid sm:grid-cols-1 md:grid-cols-2 px-3 lg:grid-cols-4 gap-3 mx-auto">
         {categories.map((category) => {

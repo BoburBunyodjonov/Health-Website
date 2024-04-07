@@ -32,7 +32,7 @@ const Header = () => {
 
   return (
     <header className="w-full ">
-      <div className="w-full border-b border-[#E5E2EE]">
+      <div  className="w-full border-b border-[#E5E2EE]">
         <div className="container mx-auto text-[#7A7687] text-xs grid md:grid-cols-2 items-center justify-center">
           <ul className="">
             <li className="inline-block p-3">
@@ -59,7 +59,7 @@ const Header = () => {
           </ul>
         </div>
       </div>
-      <nav class="">
+      <nav class="" >
         <div class="container mx-auto grid lg:grid-cols-2 gap-5 items-center p-3">
           <div className="w-full space-y-2 sm:flex justify-between items-center">
             <Link
@@ -70,7 +70,7 @@ const Header = () => {
             </Link>
             <Search />
           </div>
-          <div className="w-full space-y-2 sm:flex justify-between  items-center">
+          <div className=" w-full space-y-2 sm:flex justify-between  items-center">
             <p className="text-xs text-center text-[#7A7687]">
               Пн-Пт с 09:00-19:00
               Сб-Вс - выходной
@@ -113,7 +113,7 @@ const Header = () => {
                 <li className="inline-block">
                   <Link
                     href="/catalogue"
-                    className="flex items-center text-sm text-[#202020] font-semibold"
+                    className="hover:text-[#088269] flex items-center text-sm text-[#202020] font-semibold"
                   >
                     <HiMenuAlt1 /> Каталог
                   </Link>
