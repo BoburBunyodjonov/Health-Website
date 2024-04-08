@@ -77,7 +77,7 @@ const OfficeSlider = () => {
             <div className="p-2"  >
               <div className=" rounded-xl ">
                 <div className=" w-full flex justify-center items-center">
-                  <Image className="w-full object-contain" src={Office1} />
+                  <Image className="w-full object-contain" src={Office1} alt="Offic img 1" />
                 </div>
                 <div className="p-4 border border-[#E5E2EE] border-t-0 rounded-[0px_0px_12px_12px] space-y-2">
                     <h1 className="text-base font-semibold text-[#202020]">Экспресс лаборатория</h1>
@@ -87,7 +87,7 @@ const OfficeSlider = () => {
             <div className="p-2" >
               <div className=" rounded-xl">
                 <div className="w-full flex justify-center items-center">
-                  <Image className="w-full object-contain" src={Office2}  alt="img2" />
+                  <Image className="w-full object-contain" src={Office2}  alt="Office Img 2" />
                 </div>
                 <div className="p-4 space-y-2 border border-[#E5E2EE] border-t-0 rounded-[0px_0px_12px_12px]">
                     <h1 className="text-base font-semibold text-[#202020]">Лазерная терапия</h1>
@@ -97,7 +97,7 @@ const OfficeSlider = () => {
             <div className="p-2">
               <div className=" rounded-xl ">
                 <div className="w-full flex justify-center items-center">
-                  <Image className="w-full object-contain" src={Office3} />
+                  <Image className="w-full object-contain" src={Office3} alt="Office Img 3" />
                 </div>
                 <div className="p-4 space-y-2 border border-[#E5E2EE] border-t-0 rounded-[0px_0px_12px_12px]">
                     <h1 className="text-base font-semibold text-[#202020]">Операционный блок</h1>

@@ -127,7 +127,7 @@ const Footer = () => {
         </div>
         <div className="container border-t mx-auto py-5 px-3 grid sm:grid-cols-2 gap-5 justify-center lg:grid-cols-3 xl:grid-cols-5">
             <div>
-              <Image src={Logo} />
+              <Image src={Logo} alt="Site Logo" />
               <span className="text-xs text-[#F8F7F3]">ООО «ГЛОБАЛ МЕДИКАЛ ТРЕЙД»</span>
             </div>
             <div >
@@ -159,17 +159,17 @@ const Footer = () => {
                 <ul className="flex items-center space-x-5 py-2">
                   <li className="">
                     <Link className="" href="">
-                        <Image src={Mastercard} />
+                        <Image src={Mastercard} alt="Mastercard" />
                     </Link>
                   </li>
                   <li className="">
                     <Link className="" href="">
-                      <Image src={Visa} />
+                      <Image src={Visa}  alt="Visa Card" />
                     </Link>
                   </li>
                   <li className="">
                     <Link className="" href="">
-                      <Image src={Mir} />
+                      <Image src={Mir}  alt="Mir Card" />
                     </Link>
                   </li>
                 </ul>

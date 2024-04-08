@@ -53,7 +53,7 @@ const ProductDetailedPage = () => {
 								{product?.image && (
 									<div className='relative w-72 h-full hidden md:inline'>
 										{/* <CustomImage product={product} fill /> */}
-										<Image src={product.image} width={300} height={300} />
+										<Image src={product.image} width={300} height={300} alt={product.title} />
 									</div>
 								)}
 								<div className='flex-1 flex flex-col space-y-3'>

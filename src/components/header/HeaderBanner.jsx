@@ -61,7 +61,7 @@ const HeaderBanner = () => {
                   </div>
                 </div>
                 <div>
-                  <Image className=" w-full h-full object-cover" src={Banner} />
+                  <Image className=" w-full h-full object-cover" src={Banner}  alt="Header Banner img" />
                 </div>
               </div>
             </div>
@@ -83,7 +83,7 @@ const HeaderBanner = () => {
                   </div>
                 </div>
                 <div>
-                  <Image className=" w-full h-full object-containe" src={Banner} />
+                  <Image className=" w-full h-full object-containe" src={Banner} alt="Banner Img" />
                 </div>
               </div>
             </div>
@@ -105,7 +105,7 @@ const HeaderBanner = () => {
                   </div>
                 </div>
                 <div>
-                  <Image className=" w-full h-full object-containe" src={Banner} />
+                  <Image className=" w-full h-full object-containe" src={Banner} alt="Banner Img" />
                 </div>
               </div>
             </div>
@@ -127,7 +127,7 @@ const HeaderBanner = () => {
                   </div>
                 </div>
                 <div>
-                  <Image className=" w-full h-full object-containe" src={Banner} />
+                  <Image className=" w-full h-full object-containe" src={Banner} alt="Banner Img" />
                 </div>
               </div>
             </div>
@@ -149,7 +149,7 @@ const HeaderBanner = () => {
                   </div>
                 </div>
                 <div>
-                  <Image className=" w-full h-full object-containe" src={Banner} />
+                  <Image className=" w-full h-full object-containe" src={Banner} alt="Banner Img" />
                 </div>
               </div>
             </div>

@@ -76,7 +76,7 @@ function NewSlider() {
             <div className="p-2">
               <div className="border rounded-xl border-[#E5E2EE]">
                 <div className="border-b w-full border-[#E5E2EE] flex justify-center items-center">
-                  <Image className="w-full object-contain" src={NewsImg1} />
+                  <Image className="w-full object-contain" src={NewsImg1} alt="New Slider 1" />
                 </div>
                 <div className="p-4 space-y-2">
                     <span className="text-[#7A7687] text-xs">07.11.2022</span>
@@ -88,7 +88,7 @@ function NewSlider() {
             <div className="p-2">
               <div className="border rounded-xl border-[#E5E2EE]">
                 <div className="border-b w-full border-[#E5E2EE] flex justify-center items-center">
-                  <Image className="w-full object-contain" src={NewsImg2}  alt="img2" />
+                  <Image className="w-full object-contain" src={NewsImg2}  alt="New Slider 2"/>
                 </div>
                 <div className="p-4 space-y-2">
                     <span className="text-[#7A7687] text-xs">07.11.2022</span>
@@ -100,7 +100,7 @@ function NewSlider() {
             <div className="p-2">
               <div className="border rounded-xl border-[#E5E2EE]">
                 <div className="border-b w-full border-[#E5E2EE] flex justify-center items-center">
-                  <Image className="w-full object-contain" src={NewsImg3} />
+                  <Image className="w-full object-contain" src={NewsImg3} alt="New Slider 3" />
                 </div>
                 <div className="p-4 space-y-2">
                     <span className="text-[#7A7687] text-xs">07.11.2022</span>

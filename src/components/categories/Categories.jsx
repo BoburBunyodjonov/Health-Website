@@ -25,7 +25,7 @@ const Categories = () => {
           return (
             <div key={index} className="border rounded-lg border-[#E5E2EE]">
               <div className="bg-white rounded-[8px_8px_0px_0px] border-b border-[#E5E2EE] p-5 flex justify-center items-center">
-                <Image className="object-contain w-full h-full" src={category.img} />
+                <Image className="object-contain w-full h-full" src={category.img} alt={category.title} />
               </div>
               <div className="p-4">
                 <p className="text-base font-medium text-[#202020]">

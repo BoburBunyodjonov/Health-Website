@@ -14,7 +14,7 @@ const ProductDetailedPage = async ({ params: { id } }) => {
           <div className="container  mx-auto flex flex-col md:flex-row items-center gap-8 px-4 py-10">
             <div className="grid md:grid-cols-2 gap-5 ">
               <div className="p-3 bg-white flex justify-center items-center relative h-full">
-                <Image src={product.image} width={300} height={300} />
+                <Image src={product.image} width={300} height={300} alt={product.title} />
               </div>
               <div className="p-3 flex-1 flex flex-col space-y-3">
                 <div className="flex-1">

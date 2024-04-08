@@ -79,7 +79,7 @@ function BrandSlider() {
             <div className="p-2">
               <div className="border border-[#E5E2EE]">
                 <div className="bg-white border-b h-[200px] border-[#E5E2EE] p-5 flex justify-center items-center">
-                  <Image className="object-contain h-full" src={brandImg1} height={200} />
+                  <Image className="object-contain h-full" src={brandImg1} height={200} alt="Barnd Img" />
                 </div>
                 <div className="p-4">
                   <p className="text-base font-medium text-[#202020]">НМИЦ онкологии им. Н.Н. Блохина</p>
@@ -89,7 +89,7 @@ function BrandSlider() {
             <div className="p-2">
               <div className="border border-[#E5E2EE]">
                 <div className="bg-white border-b h-[200px] border-[#E5E2EE] p-5 flex justify-center items-center">
-                  <Image className="object-contain h-full" src={brandImg2}  />
+                  <Image className="object-contain h-full" src={brandImg2} alt="Brand Img 2"  />
                 </div>
                 <div className="p-4">
                   <p className="text-base font-medium text-[#202020]">НМИЦ онкологии им. Н.Н. Блохина</p>
@@ -99,7 +99,7 @@ function BrandSlider() {
             <div className="p-2">
               <div className="border border-[#E5E2EE]">
                 <div className="bg-white border-b h-[200px] border-[#E5E2EE] p-5 flex justify-center items-center">
-                  <Image className="object-contain h-full" src={brandImg3} />
+                  <Image className="object-contain h-full" src={brandImg3} alt="Brand Img 3" />
                 </div>
                 <div className="p-4">
                   <p className="text-base font-medium text-[#202020]">НМИЦ онкологии им. Н.Н. Блохина</p>
