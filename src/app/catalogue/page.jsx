@@ -9,6 +9,7 @@ import ProductList from "@/components/product/ProductList"
 import BrandSlider from "@/components/slider/BrandSlider"
 import NewSlider from "@/components/slider/NewsSlider"
 import OfficeSlider from "@/components/slider/OfficeSlider"
+import Layout from "@/layout/Layout"
 import { Breadcrumbs, Typography } from "@mui/material"
 import Link from "next/link"
 import { usePathname } from 'next/navigation'
@@ -32,6 +33,7 @@ const Catalogue = () => {
   ];
   return (
     <>
+      <Layout>
       <div className="container mx-auto px-5 py-5">
         {}
         <Breadcrumbs
@@ -50,6 +52,7 @@ const Catalogue = () => {
       <Information/>
       <Map/>
       <Apply/>
+      </Layout>
     </>
   )
 }

@@ -5,7 +5,7 @@
         {
             "id": 1,
             "title": "Product1",
-            "price": "300 000 руб.",
+            "price": "50 000 руб.",
             "description": "Product1 is indicated for the treatment of schizophrenia in adults and in adolescents aged 15 years and older., Product1 is indicated for the treatment of moderate to severe manic episodes in Bipolar I Disorder and for the prevention of a new manic episode in adults who experienced predominantly manic episodes and whose manic episodes responded to aripiprazole treatment., Abilify is indicated for the treatment up to 12 weeks of moderate to severe manic episodes in Bipolar I Disorder in adolescents aged 13 years and older.,",
             "category": "Allopathic drug",
             "status": "",
@@ -20,7 +20,7 @@
         {
             "id": 2,
             "title": "Product2",
-            "price": "300 000 руб.",
+            "price": "200 000 руб.",
             "description": "Product2 is indicated for the treatment of schizophrenia in adults and in adolescents aged 15 years and older., Product2 is indicated for the treatment of moderate to severe manic episodes in Bipolar I Disorder and for the prevention of a new manic episode in adults who experienced predominantly manic episodes and whose manic episodes responded to aripiprazole treatment., Abilify is indicated for the treatment up to 12 weeks of moderate to severe manic episodes in Bipolar I Disorder in adolescents aged 13 years and older.,",
             "category": "Allopathic drug",
             "status": "",
@@ -35,7 +35,7 @@
         {
             "id": 3,
             "title": "Product3",
-            "price": "300 000 руб.",
+            "price": "320 000 руб.",
             "description": "Product3 is indicated for the treatment of schizophrenia in adults and in adolescents aged 15 years and older., Product3 is indicated for the treatment of moderate to severe manic episodes in Bipolar I Disorder and for the prevention of a new manic episode in adults who experienced predominantly manic episodes and whose manic episodes responded to aripiprazole treatment., Abilify is indicated for the treatment up to 12 weeks of moderate to severe manic episodes in Bipolar I Disorder in adolescents aged 13 years and older.,",
             "category": "Allopathic drug",
             "status": "",
@@ -50,7 +50,7 @@
         {
             "id": 4,
             "title": "Product4",
-            "price": "300 000 руб.",
+            "price": "200 000 руб.",
             "description": "Product4 is indicated for the treatment of schizophrenia in adults and in adolescents aged 15 years and older., Product4 is indicated for the treatment of moderate to severe manic episodes in Bipolar I Disorder and for the prevention of a new manic episode in adults who experienced predominantly manic episodes and whose manic episodes responded to aripiprazole treatment., Abilify is indicated for the treatment up to 12 weeks of moderate to severe manic episodes in Bipolar I Disorder in adolescents aged 13 years and older.,",
             "category": "Allopathic drug",
             "status": "",
@@ -80,7 +80,7 @@
         {
             "id": 6,
             "title": "Product6",
-            "price": "300 000 руб.",
+            "price": "600 000 руб.",
             "description": "Product6 is indicated for the treatment of schizophrenia in adults and in adolescents aged 15 years and older., Product6 is indicated for the treatment of moderate to severe manic episodes in Bipolar I Disorder and for the prevention of a new manic episode in adults who experienced predominantly manic episodes and whose manic episodes responded to aripiprazole treatment., Abilify is indicated for the treatment up to 12 weeks of moderate to severe manic episodes in Bipolar I Disorder in adolescents aged 13 years and older.,",
             "category": "Allopathic drug",
             "status": "",
@@ -95,7 +95,7 @@
         {
             "id": 7,
             "title": "Product7",
-            "price": "300 000 руб.",
+            "price": "100 000 руб.",
             "description": "Product7 is indicated for the treatment of schizophrenia in adults and in adolescents aged 15 years and older., Product7 is indicated for the treatment of moderate to severe manic episodes in Bipolar I Disorder and for the prevention of a new manic episode in adults who experienced predominantly manic episodes and whose manic episodes responded to aripiprazole treatment., Abilify is indicated for the treatment up to 12 weeks of moderate to severe manic episodes in Bipolar I Disorder in adolescents aged 13 years and older.,",
             "category": "Allopathic drug",
             "status": "",
@@ -110,7 +110,7 @@
         {
             "id": 8,
             "title": "Product8",
-            "price": "300 000 руб.",
+            "price": "150 000 руб.",
             "description": "Product8 is indicated for the treatment of schizophrenia in adults and in adolescents aged 15 years and older., Product8 is indicated for the treatment of moderate to severe manic episodes in Bipolar I Disorder and for the prevention of a new manic episode in adults who experienced predominantly manic episodes and whose manic episodes responded to aripiprazole treatment., Abilify is indicated for the treatment up to 12 weeks of moderate to severe manic episodes in Bipolar I Disorder in adolescents aged 13 years and older.,",
             "category": "Allopathic drug",
             "status": "",
@@ -125,7 +125,7 @@
         {
             "id": 9,
             "title": "Product1",
-            "price": "300 000 руб.",
+            "price": "90 000 руб.",
             "description": "Product1 is indicated for the treatment of schizophrenia in adults and in adolescents aged 15 years and older., Product1 is indicated for the treatment of moderate to severe manic episodes in Bipolar I Disorder and for the prevention of a new manic episode in adults who experienced predominantly manic episodes and whose manic episodes responded to aripiprazole treatment., Abilify is indicated for the treatment up to 12 weeks of moderate to severe manic episodes in Bipolar I Disorder in adolescents aged 13 years and older.,",
             "category": "Allopathic drug",
             "status": "",
@@ -140,7 +140,7 @@
         {
             "id": 10,
             "title": "Product6",
-            "price": "300 000 руб.",
+            "price": "110 000 руб.",
             "description": "Product6 is indicated for the treatment of schizophrenia in adults and in adolescents aged 15 years and older., Product6 is indicated for the treatment of moderate to severe manic episodes in Bipolar I Disorder and for the prevention of a new manic episode in adults who experienced predominantly manic episodes and whose manic episodes responded to aripiprazole treatment., Abilify is indicated for the treatment up to 12 weeks of moderate to severe manic episodes in Bipolar I Disorder in adolescents aged 13 years and older.,",
             "category": "Allopathic drug",
             "status": "",

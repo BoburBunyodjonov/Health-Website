@@ -13,3 +13,15 @@ body{
 .slick-arrow{
   display: none!important;
 }
+
+.loader {
+  border-top-color: #38a169;
+  border-bottom-color: #38a169;
+  animation: spin 1.5s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

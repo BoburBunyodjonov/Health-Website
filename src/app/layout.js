@@ -2,8 +2,6 @@
 
 import { Manrope } from "next/font/google";
 import "./globals.css";
-import Footer from "../components/footer/Footer";
-import Header from "@/components/header/Header";
 
 const manrope = Manrope({ subsets: ["latin"] });
 
@@ -31,15 +29,8 @@ export default function RootLayout({ children }) {
 
       </head>
 
-      <body className={`${manrope.className} bg-[#F8F7F3]`}>
-
-        
-        <Header/>
-      
+      <body className={` ${manrope.className} bg-[#F8F7F3]`}>
         {children}
-        <Footer/>
-     
-
 
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 

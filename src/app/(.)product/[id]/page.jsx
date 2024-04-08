@@ -5,6 +5,7 @@ import { Dialog } from '@headlessui/react';
 import { useParams, useRouter } from 'next/navigation';
 import { useEffect, useState } from 'react';
 import { ButtonSecondary } from '@/components/buttons/Buttons';
+import Layout from '@/layout/Layout';
 
 const ProductDetailedPage = () => {
 	const [loading, setLoading] = useState(false);
@@ -29,7 +30,8 @@ const ProductDetailedPage = () => {
 	}, [id]);
 
 	return (
-		<Dialog
+		<Layout>
+			<Dialog
 			open={isOpen}
 			onClose={() => {
 				setIsOpen(false);
@@ -89,6 +91,7 @@ const ProductDetailedPage = () => {
 				</div>
 			</div>
 		</Dialog>
+		</Layout>
 	);
 };
 

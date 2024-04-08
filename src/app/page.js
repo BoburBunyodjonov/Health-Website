@@ -9,28 +9,32 @@ import Map from '@/components/map/Map'
 import OurClients from '@/components/ourClients/OurClients'
 import BrandSlider from '@/components/slider/BrandSlider'
 import NewSlider from '@/components/slider/NewsSlider'
-import React from 'react'
 import Choose from '@/components/choose/Choose'
 import ProductList from '@/components/product/ProductList'
+import Layout from '@/layout/Layout'
 
 
 
 const Home = () => {
+
+ 
  
 
   return (
     <>
-      <HeaderBanner/>
-      <Categories/>
-      <OfficeSlider/>
-      <Choose/>
-      <ProductList />
-      <OurClients/>
-      <BrandSlider />
-      <Information/>
-      <NewSlider/>
-      <Map/>
-      <Apply/>
+     <Layout>
+        <HeaderBanner/>
+        <Categories/>
+        <OfficeSlider/>
+        <Choose/>
+        <ProductList />
+        <OurClients/>
+        <BrandSlider />
+        <Information/>
+        <NewSlider/>
+        <Map/>
+        <Apply/>
+     </Layout>
       
     </>
   )
