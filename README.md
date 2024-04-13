@@ -25,6 +25,7 @@ Since products come in JSON-SERVER, generate json on localhost, so you can fully
 http://localhost:4000/products
 
 npm i json-server -g
+
 json-server --watch ./data/data.json --port 4000
 
 ## Learn More
