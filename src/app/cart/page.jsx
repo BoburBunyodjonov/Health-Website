@@ -3,24 +3,19 @@
 import { ButtonQuaternary } from "@/components/buttons/Buttons";
 import Layout from "@/layout/Layout";
 import Image from "next/image";
-import { useEffect, useState } from "react";
 import { IoIosCloseCircleOutline } from "react-icons/io";
 
 // Redux
 import { remove } from "@/reducers/CartSlice";
 import { useDispatch, useSelector } from "react-redux";
 
-
 const Cart = () => {
   const dispatch=useDispatch();
   const cartitems = useSelector((state)=>state.cart)
 
-
   const handleRemoveItem =(id)=>{
         dispatch(remove(id))
     }
-
-  console.log(cartitems);
 
   const calculateTotalPrice = () => {
     let totalPrice = 0;
@@ -29,9 +24,6 @@ const Cart = () => {
     });
     return totalPrice.toFixed(2); // Optionally, you can round the total price to two decimal places
   };
-
-  const cartDataLenght = JSON.parse(localStorage.getItem("cartData"));
-  console.log(cartDataLenght);
 
   return (
     <>
@@ -43,8 +35,8 @@ const Cart = () => {
                 <div className=" rounded-lg  p-6 mb-4">
                   <table className="w-full ">
                     <tbody className="">
-                      {cartitems.map((data) => (
-                        <tr className="mt-3  border-2 rounded-lg">
+                      {cartitems.map((data, index) => (
+                        <tr key={index} className="mt-3  border-2 rounded-lg">
                           <td className="py-4 bg-white flex items-center justify-center">
                             <div className="flex items-center">
                               <Image
