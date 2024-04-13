@@ -20,6 +20,13 @@ You can start editing the page by modifying `app/page.js`. The page auto-updates
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
+Since products come in JSON-SERVER, generate json on localhost, so you can fully use your website.
+
+http://localhost:4000/products
+
+npm i json-server -g
+json-server --watch ./data/data.json --port 4000
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
