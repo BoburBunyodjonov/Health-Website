@@ -8,21 +8,17 @@ import { GrFormPreviousLink, GrFormNextLink } from "react-icons/gr";
 import { ButtonPrimary, ButtonSecondary } from "../buttons/Buttons";
 
 const ProductList = () => {
-  const [data, setData] = useState([]);
+  const [products ,setproducts]=useState([])
 
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await fetch("http://localhost:4000/products");
-        const responseData = await response.json();
-        setData(responseData);
-      } catch (error) {
-        console.log("Error fetching data:", error);
-      }
-    };
+  const getproducts = async()=>{
+    const res = await fetch("http://localhost:4000/products");
+    const data = await res.json();
+    setproducts(data);
+  }
 
-    fetchData();
-  }, []);
+  useEffect(()=>{
+    getproducts();
+   },[])
 
   let sliderRef = useRef(null);
   const next = () => {
@@ -85,9 +81,9 @@ const ProductList = () => {
         </ul>
       </div>
       <div>
-        {data.length > 0 && (
+        {products.length > 0 && (
           <Slider ref={sliderRef} {...settings}>
-            {data.map((item, index) => (
+            {products.map((item, index) => (
               <ProductCard key={index} items={item} />
             ))}
           </Slider>

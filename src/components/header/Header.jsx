@@ -7,6 +7,8 @@ import Image from "next/image";
 // Images
 import Logo from "@/images/logo.png";
 
+import { useSelector } from 'react-redux'
+
 // Icons
 import { FaBars } from "react-icons/fa6";
 import { FaRegUser } from "react-icons/fa6";
@@ -23,7 +25,24 @@ import Modal from "../modal/Modal";
 import TransitionsModal from "../modal/Modal";
 import { useState } from "react";
 
+
+import Badge from '@mui/material/Badge';
+import { styled } from '@mui/material/styles';
+import IconButton from '@mui/material/IconButton';
+
+const StyledBadge = styled(Badge)(({ theme }) => ({
+  '& .MuiBadge-badge': {
+    right: -3,
+    top: 13,
+    border: `2px solid ${theme.palette.background.paper}`,
+    padding: '0 4px',
+  },
+}));
+
 const Header = () => {
+
+  // Redux 
+  const cartCount = useSelector((state) => state.cart)
 
   const [open, setOpen] = useState(false);
   const handleOpen = () => setOpen(true);
@@ -98,7 +117,9 @@ const Header = () => {
                 </li>
                 <li>
                   <Link href="/cart" className="px-2 text-center flex flex-col justify-center">
-                    <MdOutlineShoppingCart className="text-xl mx-auto" />
+                    <StyledBadge badgeContent={cartCount.length} color="secondary">
+                      <MdOutlineShoppingCart className="text-xl mx-auto" />
+                    </StyledBadge>
                     <span className="text-xs text-[#7A7687]">Корзина</span>
                   </Link>
                 </li>

@@ -6,29 +6,17 @@ import { New } from "./Section";
 import { ButtonQuaternary } from "../buttons/Buttons";
 import Link from "next/link";
 
+// Redux
+import {useDispatch} from "react-redux";
+import { add } from "@/reducers/CartSlice";
+
 const ProductCard = ({ index, items }) => {
   const [showButton, setShowButton] = useState(true);
-  const [cartData, setCartData] = useState([]);
+  const dispatch = useDispatch();
 
-  useEffect(() => {
-    const saveCart = JSON.parse(localStorage.getItem("cartData")) || [];
-    saveCart.forEach((item) => {
-      if (item.id === items.id) {
-        setShowButton(false);
-      }
-    });
-  }, [items.id]); // Include items.id in the dependency array
-
-  const handleAddToCart = () => {
-    if (true) {
-      const existingCartData =
-        JSON.parse(localStorage.getItem("cartData")) || [];
-      existingCartData.push(items);
-      localStorage.setItem("cartData", JSON.stringify(existingCartData));
-      setCartData(existingCartData);
-      setShowButton(false);
-    } else {
-    }
+  const handleAddToCart = (items) => {
+    dispatch(add(items));
+    setShowButton(false);
   };
 
   return (
@@ -72,7 +60,7 @@ const ProductCard = ({ index, items }) => {
           {showButton ? (
             <ButtonQuaternary
               width="w-full"
-              onChandleAddToCartlick={handleAddToCart}
+              onChandleAddToCartlick={()=> handleAddToCart(items)}
               title="Добавить в корзину"
             />
           ) : (

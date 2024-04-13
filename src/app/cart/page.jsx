@@ -6,28 +6,25 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 import { IoIosCloseCircleOutline } from "react-icons/io";
 
+// Redux
+import { remove } from "@/reducers/CartSlice";
+import { useDispatch, useSelector } from "react-redux";
+
+
 const Cart = () => {
-  const [products, setProducts] = useState([]);
+  const dispatch=useDispatch();
+  const cartitems = useSelector((state)=>state.cart)
 
-  useEffect(() => {
-    const storedData = JSON.parse(localStorage.getItem("cartData"));
-    if (storedData) {
-      setProducts(storedData);
+
+  const handleRemoveItem =(id)=>{
+        dispatch(remove(id))
     }
-  }, []);
 
-  console.log(products);
-  // Function to remove item from the cart
-  const handleRemoveItem = (index) => {
-    const updatedProducts = [...products];
-    updatedProducts.splice(index, 1);
-    setProducts(updatedProducts);
-    localStorage.setItem("cartData", JSON.stringify(updatedProducts));
-  };
+  console.log(cartitems);
 
   const calculateTotalPrice = () => {
     let totalPrice = 0;
-    products.forEach((product) => {
+    cartitems.forEach((product) => {
       totalPrice += parseFloat(product.price);
     });
     return totalPrice.toFixed(2); // Optionally, you can round the total price to two decimal places
@@ -46,8 +43,8 @@ const Cart = () => {
                 <div className=" rounded-lg  p-6 mb-4">
                   <table className="w-full ">
                     <tbody className="">
-                      {products.map((data, index) => (
-                        <tr key={index} className="mt-3  border-2 rounded-lg">
+                      {cartitems.map((data) => (
+                        <tr className="mt-3  border-2 rounded-lg">
                           <td className="py-4 bg-white flex items-center justify-center">
                             <div className="flex items-center">
                               <Image
@@ -77,7 +74,7 @@ const Cart = () => {
                           <td>
                             <button
                               className="text-red-600 mt-4 lg:mt-0"
-                              onClick={() => handleRemoveItem(index)}
+                              onClick={()=>handleRemoveItem(data.id)}
                             >
                               <IoIosCloseCircleOutline />
                               Remove
